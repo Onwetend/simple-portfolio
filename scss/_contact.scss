@@ -1,0 +1,36 @@
+.contact {
+	height: 100%;
+	padding-top: 30vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: $background-gradient, url("../img/background.webp") center top;
+	background-size: cover;
+
+	h2 {
+		font-size: 3rem;
+		margin-bottom: 3rem;
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 2rem;
+		font-size: 1.5rem;
+
+		.text-secondary {
+			color: $color;
+		}
+	}
+
+	.text-secondary {
+		padding-top: 0.5rem;
+	}
+
+	.social-icons {
+		position: initial;
+		margin-top: 2rem;
+	}
+
+}

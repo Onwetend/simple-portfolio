@@ -1,0 +1,31 @@
+$color: #fff;
+$primary-color: #000;
+$secondary-color: #FFA500;
+$background-gradient:
+	linear-gradient(
+			to left,
+			rgba($primary-color, 0.8),
+			rgba($primary-color, 0.7)
+		);
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+@mixin transition-ease {
+	transition: all 0.3s ease-in-out;
+}
+
+@mixin media-md {
+	@media screen and (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin media-lg {
+	@media screen and (min-width: 1024px) {
+		@content;
+	}
+}
